@@ -49,7 +49,7 @@ namespace TestTask
             DEL_THRASH_3.Parameters.AddWithValue("emp_id", emp_id);
             SqlCommand WORKERS_INSERT_employees = new SqlCommand("UPDATE [employees] SET title_ID=@title_ID, dept_ID=@dept_id WHERE emp_id=@emp_ID ", sqlConnection);
             WORKERS_INSERT_employees.Parameters.AddWithValue("emp_ID", emp_id);
-            WORKERS_INSERT_employees.Parameters.AddWithValue("title_ID", 1);
+            WORKERS_INSERT_employees.Parameters.AddWithValue("title_ID", 9);
             WORKERS_INSERT_employees.Parameters.AddWithValue("dept_ID", comboBox1.SelectedValue);
 
             SqlCommand WORKERS_INSERT_emp = new SqlCommand("INSERT INTO [emp](emp_id, work_exp)VALUES(@emp_id, @dir_type)", sqlConnection);

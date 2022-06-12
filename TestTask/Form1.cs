@@ -29,7 +29,7 @@ namespace TestTask
             // TODO: данная строка кода позволяет загрузить данные в таблицу "db_a883d5_workersDataSet1.titles". При необходимости она может быть перемещена или удалена.
             this.titlesTableAdapter.Fill(this.db_a883d5_workersDataSet1.titles);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "db_a883d5_workersDataSet.departments". При необходимости она может быть перемещена или удалена.
-            this.departmentsTableAdapter.Fill(this.db_a883d5_workersDataSet.departments);
+            //this.departmentsTableAdapter.Fill(this.db_a883d5_workersDataSet.departments);
             string connectionString = ConfigurationManager.ConnectionStrings["1"].ConnectionString;
 
             sqlConnection = new SqlConnection(connectionString);
